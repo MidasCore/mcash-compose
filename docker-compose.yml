@@ -1,0 +1,24 @@
+version: "3"
+services:
+  mcashnode:
+    image: mcash/java-mcashchain:v0.2.0
+    volumes:
+      - ./volumes/output:/usr/app/output
+    environment:
+#      WITNESS: "true"
+#      PRIVATE_KEY: ""
+    ports:
+      # rpc-port
+      - 50051:50051
+      # Full node port
+      - 8090:8090
+      # listen port udp
+      - 11399:11399/udp
+      # listen port tcp
+      - 11399:11399
+    restart: unless-stopped
+    container_name: mcashnode
+    logging:
+      options:
+        max-size: "500k"
+        max-file: "20"
