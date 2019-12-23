@@ -14,7 +14,7 @@ This is the initial setup process. You will only need to do this once.
 #### 1. Clone and cd into this repo
 
 ```shell script
-git clone https://https://github.com/MidasCore/mcash-compose.git && cd mcash-compose
+git clone https://github.com/MidasCore/mcash-compose.git && cd mcash-compose
 ```
 
 #### 2. Install Docker and Docker-Compose (skip this if already installed)
