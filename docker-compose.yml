@@ -4,7 +4,7 @@ services:
     image: mcash/java-mcashchain:v0.2.0
     volumes:
       - ./volumes/output:/usr/app/output
-    environment:
+#    environment:
 #      WITNESS: "true"
 #      PRIVATE_KEY: ""
     ports:
